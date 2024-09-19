@@ -10,13 +10,28 @@ public class Sieve {
 		System.out.print("Please input the number n you want : ");
 		int n = scan.nextInt();
 				
-		int[] numberArray  = new int[n];
-		for(int i = 1; i < numberArray.length; i++) {
-			numberArray[i] = n -(n-i);
-			System.out.print(numberArray[i]);
-		}
+		boolean[] primeArray = new boolean [n];
+		for(int i = 2; i < n; i++) {
+			for(int j = 2; j < n/i; j++) {
+				primeArray[i*j] = true; 
+			
 		
+			
+			
+			
+			
+			
+			}
+			if(primeArray[i]==false) {
+			System.out.print(i+" ");
+			
+
+	}
+		
+		}
 		
 	}
 
 }
+//s = any number (int) >1
+//i = the index of the array at that point
